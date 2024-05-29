@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blikající Stránka</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        .blikat {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            color: #fff;
+            animation: blikani 1s infinite;
+        }
+        @keyframes blikani {
+            0% { background-color: red; }
+            25% { background-color: yellow; }
+            50% { background-color: blue; }
+            75% { background-color: green; }
+            100% { background-color: red; }
+        }
+    </style>
+</head>
+<body>
+    <div class="blikat"> Lecba hotova. </div>
+</body>
+</html>
